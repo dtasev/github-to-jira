@@ -13,8 +13,10 @@ Getting RUBY
 Easiest way is to just start a Docker ruby environment, then follow the instructions below.
 
 ```
-docker run -v ~/dev/autoreduce:/autoreduce -it ruby:2.6 /bin/bash
+docker run -v /somepath:/somepath -it ruby:2.6 /bin/bash
 ```
+
+Make sure to move the output `.json` to `/somepath` or you won't be able to see it. You'll also need to chown it to your current user because it will be owned by root when made from Docker.
 
 Running
 -------
