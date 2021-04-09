@@ -7,6 +7,15 @@ This is a simple script to generate a JSON file for this import from the GitHub 
 
 https://confluence.atlassian.com/pages/viewpage.action?pageId=293830712
 
+
+Getting RUBY
+------------
+Easiest way is to just start a Docker ruby environment, then follow the instructions below.
+
+```
+docker run -v ~/dev/autoreduce:/autoreduce -it ruby:2.6 /bin/bash
+```
+
 Running
 -------
 
