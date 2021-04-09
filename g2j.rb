@@ -51,7 +51,7 @@ issues.each do |issue|
   logger.debug "Fetching #{issue.state} issue ##{issue.number} #{issue.title}"
   issue_jira = {
     "key" => "#{jirakey}-#{issue.number}",
-    "status" => issue.state.capitalize,
+    "status" => "To do",
     "resolution" => (issue.state == 'closed') ? 'Fixed' : nil,
     "reporter" => issue.user.login,
     "created" => jira_date(issue.created_at),
